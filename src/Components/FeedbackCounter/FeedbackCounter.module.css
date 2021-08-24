@@ -1,0 +1,63 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.item {
+    width: 100px;
+}
+
+.item:not(:last-child) {
+    margin-right: 15px;
+}
+
+.button {
+    text-transform: capitalize;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.25s 0s linear;
+}
+
+.button:hover {
+    background-color: #fff;
+    border: 1px solid darkblue;
+}
+
+.good {
+    composes: button;
+    background-color: green;
+}
+
+.neutral {
+    composes: button;
+    background-color: yellow;
+}
+
+.bad {
+    composes: button;
+    background-color: red;
+}
