@@ -18,9 +18,9 @@ function App() {
 
     const handlerClickOnRate = e => {
         const { name } = e.target;
-        if (name === 'good') setGoodRating(good + 1);
-        if (name === 'neutral') setNeutralRating(neutral + 1);
-        if (name === 'bad') setBadRating(bad + 1);
+        if (name === 'good') setGoodRating(state => state + 1);
+        if (name === 'neutral') setNeutralRating(state => state + 1);
+        if (name === 'bad') setBadRating(state => state + 1);
         return;
     };
 
